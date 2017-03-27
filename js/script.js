@@ -2,9 +2,9 @@
 
 var fireballSize = 22;
 
-var getFireballSpeed = function(left) {
+var getFireballSpeed = function (left) {
   if (left) {
-    return 5
+    return 5;
   } else {
     return 2;
   }
@@ -14,20 +14,15 @@ var wizardSpeed = 3;
 
 var wizardWidth = 70;
 
-var getWizardHeight = function() {
-  return 1.337 * wizardWidth;
+var getWizardHeight = function () {
+  var WizardHeight = 1.337 * wizardWidth;
+  return WizardHeight;
 };
 
-var getWizardX = function(width) {
-  return width = 350;
+var getWizardX = function (width) {
+  return width = 250;
 };
 
-var getWizardY = function(height) {
-  return height = 150;
+var getWizardY = function (height) {
+  return height = 200;
 };
-
-
-
-//Определите функцию getWizardX c одним параметром — width. Игра будет вызывать вашу функцию и передавать в неё этот параметр (который обозначает ширину игровой области). Результат, возвращаемый вашей функцией, игра будет использовать, чтобы задать положение мага по горизонтали. Напишите функцию так, чтобы центр фигурки мага находился посередине игрового поля.
-
-//Определите функцию getWizardY c одним параметром — height. Игра будет вызывать вашу функцию и передавать в неё этот параметр (который обозначает высоту игровой области). Результат, возвращаемый вашей функцией, игра будет использовать, чтобы задать положение мага по вертикали. Напишите функцию так, чтобы маг появлялся на высоте две трети игрового поля от земли.
